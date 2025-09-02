@@ -67,7 +67,7 @@ The application includes **role-based access**, **JWT authentication**, and **PD
 ---
 
 ## 5. Live Demo
-[OralVis Healthcare Live Demo](https://srinivas-oralvis-healthcare-fronten.vercel.app/)
+[OralVis Healthcare Live Demo](https://srinivas-oralvis-healthcare-frontend.vercel.app/)
 
 ---
 
