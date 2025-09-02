@@ -1,0 +1,119 @@
+/* Container styling */
+.upload-page-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-page-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.upload-page-container h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Form styling */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.upload-form label {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Input & select styling */
+.upload-form input,
+.upload-form select {
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.upload-form input:focus,
+.upload-form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* File input customization */
+.upload-form input[type="file"] {
+    border: 1px dashed #007bff;
+    background-color: #f1f8ff;
+    padding: 8px;
+}
+
+/* Button styling */
+.upload-form button {
+    margin-top: 25px;
+    padding: 12px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.upload-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Success & error message */
+.upload-message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Success */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Error */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 650px) {
+    .upload-page-container {
+        margin: 40px 15px;
+        padding: 25px;
+    }
+
+    .upload-form button {
+        font-size: 14px;
+    }
+}

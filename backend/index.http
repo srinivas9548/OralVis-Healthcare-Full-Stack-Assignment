@@ -1,0 +1,35 @@
+// Register User API
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email": "vasu123@gmail.com",
+    "password": "vasu@2022",
+    "role": "Dentist"
+}
+
+###
+
+// Login User API
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "vasu123@gmail.com",
+    "password": "vasu@2022"
+}
+
+###
+
+// Technician Upload Scans
+POST http://localhost:3000/upload
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IlRlY2huaWNpYW4iLCJpYXQiOjE3NTY3MDY3NjgsImV4cCI6MTc1NjcxMDM2OH0.a_PngqQzfr4IzYy0eajFMwraSlxMXuCPCsZYJZt5vko
+Content-Type: multipart/form-data
+
+###
+
+// Dentist View Scans
+GET http://localhost:3000/scans
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6IkRlbnRpc3QiLCJpYXQiOjE3NTY3MTI0MDgsImV4cCI6MTc1NjcxNjAwOH0.RhwVsJ45LkQoMXYcrXKrtBk3lhvtm3e6XELYvRP3v_A
+
+###

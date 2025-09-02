@@ -1,0 +1,43 @@
+.nav-header {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    height: 56px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-header {
+        height: 64px;
+    }
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #262626;
+}
+
+.logout-button {
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    padding: 0px 10px;
+    background-color: #2d2dec;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #2525b8;
+}
